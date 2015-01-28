@@ -7,9 +7,11 @@ $(document).ready(function(){
 
     $("span").click(function(){
 
-      $("span").text("ahhh, the cat is back!");
+      $("#cat").slideToggle();
 
-      $("span").slideDown("#cat");
+      $("span").text("ahhh, the cat is back! (click to make him go away again");
+
+      // $("span").slideDown("#cat");
 
     }); //ends click event
 
