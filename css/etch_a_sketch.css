@@ -2,3 +2,15 @@
   background-color: yellow;
 };*/
 
+body { padding: 10px; }
+
+#grid_wrapper { position: relative; }
+
+#grid_wrapper div {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  background: #f4f4f4;
+  color: #9e9da4;
+  text-align: center;
+}
