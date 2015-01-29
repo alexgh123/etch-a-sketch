@@ -5,40 +5,40 @@ $(document).ready(function(){
   .append('<ul></ul>')
   .append('<ul></ul>')
   .append('<ul></ul>')
-  .append('<ul></ul>') // these ULs are added and work
+  .append('<ul></ul>')
 
   $('ul').append('<li></li>')
     .append('<li></li>')
     .append('<li></li>')
-    .append('<li></li>') // these li elements work
+    .append('<li></li>')
 
-    $('li').css({
-      display: 'inline-block',
-      'list-style-type': 'none',
-      height: '25px',
-      width: '25px',
-      border: '1px black solid',
-      margin: '0 1px',
-      'box-sizing': 'border-box'
-    }).hover(function(){
-      $(this).css('background-color', 'blue')
-    }); // all of this works beautifully
+  $('li').css({
+    display: 'inline-block',
+    'list-style-type': 'none',
+    height: '25px',
+    width: '25px',
+    border: '1px black solid',
+    margin: '0 1px',
+    'box-sizing': 'border-box'
+  }).hover(function(){
+    $(this).css('background-color', 'blue')
+  });
 
-    $('.container').css({
-      margin:'0 auto'
-    }); // i see no evidence of what this is doing yet
+  $('.container').css({
+    margin:'0 auto'
+  });
 
-    $('ul').css({
-      padding: '0',
-      margin: '0'
-    });
+  $('ul').css({
+    padding: '0',
+    margin: '0'
+  });
 
-    $('button').css({
-      margin: '10px 0',
-      padding: '10px',
-      'font-size': '16px'
-    });
-  }); //so this is what I was missing
+  $('button').css({
+    margin: '10px 0',
+    padding: '10px',
+    'font-size': '16px'
+  });
+}); // should end doc ready stuff here
 
   function newGrid(){
 
@@ -58,15 +58,16 @@ $(document).ready(function(){
       var height = prompt('Grid height must be 40 or less');
     }
 
-    for (var i = 0; i <= height; i++){
+    for (var i = 1; i <= height; i++){
       $('.container').append('<ul></ul>');
     }
 
-    for (var i = 0; i <= width; i++){
+    for (var i = 1; i <= width; i++){
       $('ul').append('<li></li>')
     }
 
     $('.container').prepend('<button onclick="newGrid(); return false">button?</button>')
+    $('container').css({border: '2px red solid'})
 
     $('li').css({
       display: 'inline-block',
@@ -94,12 +95,4 @@ $(document).ready(function(){
       padding: '10px',
       'font-size': '16px'
     });
-  }; // this ends new grid function
-
-   // only here to call it to see it move as i make it
-
-
-// }); //end doc ready functions
-
-
-
+};
