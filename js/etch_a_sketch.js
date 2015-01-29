@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 var rows = 16,
     cells = 16,
     count = 0;
@@ -44,20 +45,11 @@ for (j = 0; j < rows; j += 1) {
 // Append all
 $grid_wrapper.html($fragment);
 
+$grid_wrapper.mouseEnter(function(){
+  ("#grid_wrapper").css({ "background-color": "red"})
+});
+
 }); //end doc ready functions
 
 
 
-// $("#cat").click(function(){
-//       $(this).slideUp();
-//     });
-
-//     // begin click event operations
-
-//     $("span").click(function(){
-
-//       $("span").text("ahhh, the cat is back!");
-
-//       $("span").slideDown("#cat");
-
-//     }); //ends click event

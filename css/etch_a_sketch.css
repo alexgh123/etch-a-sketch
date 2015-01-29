@@ -1,7 +1,7 @@
 /*#grid_wrapper:hover {
   background-color: yellow;
 };*/
-
+/*
 body { padding: 10px; }
 
 #grid_wrapper { position: relative; }
@@ -11,6 +11,10 @@ body { padding: 10px; }
   height: 48px;
   width: 48px;
   background: #f4f4f4;
-  color: #9e9da4;
+  /*color: #9e9da4;*/
   text-align: center;
 }
+/*
+#grid_wrapper :hover{
+  background:red;
+}*/*/
